@@ -3,7 +3,7 @@ var students = [];
 
 //terms
 var terms = [];
-//terms
+
 
 d3.json('hw3data.json')
     .then(function (data) {
@@ -33,7 +33,7 @@ d3.json('hw3data.json')
             .range([0, height]);
         var xS = d3.scaleBand()
             // .domain(d3.range(0, students.length))
-            //added
+         
             .domain(terms)
             .range([0, width])
             .padding(.125);
